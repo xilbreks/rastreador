@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ratreador</title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyAkYF6lWpBgwrKIAqPOZASyEvmO6GQ-WYA",
+      authDomain: "amtaf-8fd38.firebaseapp.com",
+      databaseURL: "https://amtaf-8fd38.firebaseio.com",
+      projectId: "amtaf-8fd38",
+      storageBucket: "amtaf-8fd38.appspot.com",
+      messagingSenderId: "690949245741"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <div style="margin-bottom:50px;">
+    <button onclick="iniciarRastreo()" id="btn-init">
+      Iniciar
+    </button>
+  </div>
+  <div>
+    <button onclick="detenerRastreo()" id="btn-stop" disabled>
+      Detener
+    </button>
+  </div>
+</body>
+<script src="service.js"></script>
+
+</html>
